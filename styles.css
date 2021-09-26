@@ -11,9 +11,15 @@
 }
 
 .counters{
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .row{
     margin-bottom: 0px !important;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 500px !important;
+    width: 90%;
+  }
