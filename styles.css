@@ -1,10 +1,19 @@
-.custom-col {
-      width: 20%;
-      margin-left: auto;
-      left: auto;
-      right: auto;
-  }
-  .billTitle .coinTItle{
-      color: black;
+.sarpanchFont{
+    font-family: 'Sarpanch', sans-serif;
+}
 
-  }
+.robotoFont{
+    font-family: 'Roboto', sans-serif;
+}
+
+.icelandFont{
+    font-family: 'Iceland', cursive;
+}
+
+.counters{
+    font-size: 35px;
+}
+
+.row{
+    margin-bottom: 0px !important;
+}

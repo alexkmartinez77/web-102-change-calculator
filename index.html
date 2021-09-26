@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"  type="text/css" href="./styles.css">
+    <!--Import Google Font Sarpanch, Iceland and Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Roboto:wght@100;400&family=Sarpanch:wght@800&display=swap" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -12,12 +16,13 @@
     <title>Change Calculator</title>
   </head>
   <body>
-    <!-- Header -->
+    <!--Container Begins-->
     <div class="container center">
-      <div class="class row">
-        <h1>Change Calculator</h1>
+      <!-- Header Row-->
+      <div class="row">
+        <h1 class="sarpanchFont">Change Calculator</h1>
       </div>
-  <!-- Input Container -->
+      <!-- Item Input Row -->
       <div class="row">
         <form class="col s12">
           <div class="row">
@@ -32,108 +37,128 @@
           </div>
         </form>
       </div>
-      <!-- 5 Denomination Rows-->
-      <div class="row">
-        <div class="col custom-col">
-          <div class="row">
-            <div>
-              <span id="hundredDollarBill">0</span>
-              <div class="card">
-                <div class="card-image">
-                  <img src="./images/one hundred.png">
-                </div>
-                <div class="card-content">
-                  <p>$20</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col custom-col">
-          <div class="row">
-            <div>
-              <span id="hundredDollarBill">0</span>
-              <div class="card">
-                <div class="card-image">
-                  <img src="./images/one hundred.png">
-                </div>
-                <div class="card-content">
-                  <p>$10</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col custom-col">
-          <div class="row">
-            <div>
-              <span id="hundredDollarBill">0</span>
-              <div class="card">
-                <div class="card-image">
-                  <img src="./images/one hundred.png">
-                </div>
-                <div class="card-content">
-                  <p>$5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col custom-col">
-          <div class="row">
-            <div>
-              <span id="hundredDollarBill">0</span>
-              <div class="card">
-                <div class="card-image">
-                  <img src="./images/one hundred.png">
-                </div>
-                <div class="card-content">
-                  <p>$2</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col custom-col">
-          <div class="row">
-            <div>
-              <span id="hundredDollarBill">0</span>
-              <div class="card">
-                <div class="card-image">
-                  <img src="./images/one hundred.png">
-                </div>
-                <div class="card-content">
-                  <p>$1</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>  
-  <!-- 4 Coin Rows-->
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s3">
-              <h6>Quarters</h6>
-              <p>Quarters Outpu</p>
-            </div>
-            <div class="input-field col s3">
-              <h6>Dimes</h6>
-              <p>Dimes Outpu</p>
-            </div>
-            <div class="input-field col s3">
-              <h6>Nickels</h6>
-              <p>Nickels Outpu</p>
-            </div>
-            <div class="input-field col s3">
-              <h6>Pennies</h6>
-              <p>Pennies Outpu</p>
-            </div>
-          </div>
-        </form>
+      <div class="class row">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
       </div>
-    </div>  <!-- end of container -->
+      <div class="class row valign-wrapper">
+        <div class="class col s3"><span id="twentyBill" class="sarpanchFont counters">0</span></div>
+        <div class="class col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/one hundred.png">
+            </div>
+          </div>
+        </div>
+        <div class="class col s3"><span id="twentyBill" class="sarpanchFont counters">0</span></div>
+        <div class="class col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/one hundred.png">
+            </div>
+          </div>
+        </div>      
+      </div>
+      <div class="class row valign-wrapper">
+        <div class="class col s3"><span id="twentyBill" class="sarpanchFont counters">0</span></div>
+        <div class="class col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/one hundred.png">
+            </div>
+          </div>
+        </div>
+        <div class="class col s3"><span id="twentyBill" class="sarpanchFont counters">0</span></div>
+        <div class="class col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/one hundred.png">
+            </div>
+          </div>
+        </div>      
+      </div>
+      <div class="class row valign-wrapper">
+        <div class="class col s3"><span id="twentyBill" class="sarpanchFont counters">0</span></div>
+        <div class="class col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/one hundred.png">
+            </div>
+          </div>
+        </div>
+        <div class="class col s3"><span id="twentyBill" class="sarpanchFont counters">0</span></div>
+        <div class="class col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/one hundred.png">
+            </div>
+          </div>
+        </div>      
+      </div>
+      <div class="class row valign-wrapper">
+        <div class="class col s3"><span id="twentyBill" class="sarpanchFont counters">0</span></div>
+        <div class="class col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/one hundred.png">
+            </div>
+          </div>
+        </div>
+        <div class="class col s3"><span id="twentyBill" class="sarpanchFont counters">0</span></div>
+        <div class="class col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/one hundred.png">
+            </div>
+          </div>
+        </div>      
+      </div>
+      <div class="class row valign-wrapper">
+        <div class="class col s3"><span id="twentyBill" class="sarpanchFont counters">0</span></div>
+        <div class="class col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/one hundred.png">
+            </div>
+          </div>
+        </div>
+        <div class="class col s3"><span id="twentyBill" class="sarpanchFont counters">0</span></div>
+        <div class="class col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/one hundred.png">
+            </div>
+          </div>
+        </div>      
+      </div>
+      <!--Change Row
+      <div class="row">
+        <div class="col s12">
+           5 Denomination Rows ($20, $10, $5, $2, $1)
+          <div class="row">
+            <div class="col s6">
+                <div class="row">
+                  <div class="col s12">
+                    <div class="row valign-wrapper">
+                      <div class="col s6">
+                        <span id="twentyBill" class="sarpanchFont counters">0</span>
+                      </div>
+                      <div class="col s6">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="./images/one hundred.png">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    <!-- end of container -->
   </body>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  </body>
