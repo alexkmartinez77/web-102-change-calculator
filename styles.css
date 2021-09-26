@@ -14,12 +14,22 @@
     font-size: 25px;
 }
 
-.row{
+.rowModifier{
     margin-bottom: 0px !important;
+    height: 50px !important;
 }
 
 .container {
-    margin: 0 auto;
     max-width: 500px !important;
-    width: 90%;
   }
+
+.dollarImg {
+    vertical-align: middle;
+    width: 80px;
+    height: 35px;
+}
+.coinImg{
+    vertical-align: middle;
+    height: 35px; 
+    width: 35px;
+}
