@@ -2,7 +2,6 @@
 function calculateChange(tendered, cost){
 
     var change = tendered - cost;
-    console.log(change);
 
     //Calculate quantity of $20 bills to return
     var twentyChange = Math.floor(change / 20);
@@ -33,7 +32,6 @@ function calculateChange(tendered, cost){
     var quarterChange = Math.floor(remainingChange / .25);
     remainingChange = (remainingChange % .25).toFixed(2);
     document.getElementById('quarters-output').innerHTML = quarterChange;
-    console.log('After Quarters ' + remainingChange);
 
     //Calculate quantity of dimes bills to return
     var dimeChange = Math.floor(remainingChange / .10);
@@ -49,7 +47,6 @@ function calculateChange(tendered, cost){
     var pennyChange = Math.floor(remainingChange / .01);
     remainingChange = (remainingChange % .01).toFixed(2);
     document.getElementById('pennies-output').innerHTML = pennyChange;
-    console.log(remainingChange);
 }
 
 // handleClickEvent function
