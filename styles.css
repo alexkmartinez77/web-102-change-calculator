@@ -32,9 +32,6 @@
         font-size: 5em !important;
     }
 }
-/*h1 {
-    font-size: 50px !important;
-  }*/
 
 .sarpanchFont{
     font-family: 'Sarpanch', sans-serif;
@@ -74,4 +71,14 @@
     vertical-align: middle;
     height: 35px; 
     width: 35px;
+}
+
+.dollarSignPadding{
+    padding-right: 0 !important;
+}
+
+.dollarSignMargin{
+    margin-bottom: 8px !important;
+    margin-top: 0px !important;
+    border-bottom: 1px !important;
 }

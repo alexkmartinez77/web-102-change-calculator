@@ -56,3 +56,4 @@ function handleClickEvent(e){
 
     calculateChange(tendered, cost);
 }
+
