@@ -1,11 +1,16 @@
+/*
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 5em !important;
+        font-size: 4em !important;
     }
     .container{
         width: 100% !important;
         }
+    .counters{
+        font-size: 1em; 
+        margin: 0px !important;;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -45,21 +50,12 @@
     font-family: 'Iceland', cursive;
 }
 
-.counters{
-    font-size: 25px;
-}
-
 .rowModifier1{
     margin-bottom: 0px !important;
 }
 
-.rowModifier2{
-    margin-bottom: 0px !important;
-    height: 50px !important;
-}
-
 .container {
-    max-width: 500px !important;
+    max-width: 600px !important;
   }
 
 .dollarImg {
@@ -81,4 +77,25 @@
     margin-bottom: 8px !important;
     margin-top: 0px !important;
     border-bottom: 1px !important;
+}
+
+th, td{
+    padding: 5px 5px 5px 5px !important;
+    /*border: blue dashed 1px !important;*/
+
+}
+
+.noMargin{
+    margin: 0px !important;
+}
+
+table{
+    margin: 0 auto !important;
+   /*border: red solid 1px !important;*/
+    width: 1px !important;
+
+}
+
+.headerMargin{
+    margin: 10px 0px 10px 0px !important;
 }
