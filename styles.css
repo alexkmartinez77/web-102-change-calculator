@@ -8,8 +8,10 @@
         width: 100% !important;
         }
     .counters{
-        font-size: 1em; 
-        margin: 0px !important;;
+        font-size: 1.25em; 
+        }
+    .counterHeaders{
+        font-size: 1.5em;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -42,8 +44,8 @@
     font-family: 'Sarpanch', sans-serif;
 }
 
-.robotoFont{
-    font-family: 'Roboto', sans-serif;
+.bebasFont{
+    font-family: 'Bebas Neue', cursive;
 }
 
 .icelandFont{
@@ -60,13 +62,13 @@
 
 .dollarImg {
     vertical-align: middle;
-    width: 80px;
-    height: 35px;
+    width: 150px;
+    height: 64px;
 }
 .coinImg{
     vertical-align: middle;
-    height: 35px; 
-    width: 35px;
+    height: 64px; 
+    width: 64px;
 }
 
 .dollarSignPadding{
@@ -91,7 +93,7 @@ th, td{
 
 table{
     margin: 0 auto !important;
-   /*border: red solid 1px !important;*/
+    /*border: red solid 1px !important;*/
     width: 1px !important;
 
 }

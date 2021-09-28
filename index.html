@@ -6,8 +6,8 @@
     <!--Import Google Font Sarpanch, Iceland and Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Roboto:wght@100;400&family=Sarpanch:wght@800&display=swap" rel="stylesheet">
-    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Bebas+Neue&family=Sarpanch:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -29,18 +29,18 @@
         <form class="col s12"> 
           <div class="row rowModifier1 valign-wrapper">
             <div class="col s1 right-align dollarSignPadding">
-              <p class="dollarSignMargin">$</p>
+              <p class="dollarSignMargin bebasFont">$</p>
             </div>
             <div class="input-field col s5">
-              <input id="amount-due" type="text" class="validate">
-              <label for="amount-due">Sale Amount</label>
+              <input id="amount-due" type="text" class="validate bebasFont">
+              <label for="amount-due" class="bebasFont">Sale Amount</label>
             </div>
             <div class="col s1 right-align dollarSignPadding">
-              <p class="dollarSignMargin">$</p>
+              <p class="dollarSignMargin bebasFont">$</p>
             </div>
             <div class="input-field col s5">
-              <input id="amount-received" type="text" class="validate">
-              <label for="amount-received">Amount Tendered</label>
+              <input id="amount-received" type="text" class="validate bebasFont">
+              <label for="amount-received" class="bebasFont">Amount Tendered</label>
             </div>
           </div>
         </form>
@@ -53,42 +53,42 @@
       </div>
       <!--Results Row-->
       <div class="row">
-        <div class="col s6">
+        <div class="col s7">
           <div class="row">
               <div class="col s12">
                   <div class="row">
                     <table class="centered">
                         <thead>
                           <tr>
-                              <th>Count</th>
-                              <th colspan="2">Denomination</th>
+                              <th class="counterHeaders bebasFont">Count</th>
+                              <th  class="counterHeaders bebasFont" colspan="2">Denomination</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td><p id="twenty-dollars-output" class="sarpanchFont counters">0</p></td>
                             <td><img class="z-depth-2 dollarImg" src="./images/twenty.png"></td>
-                            <td><p class="sarpanchFont counters">$20</p></td>
+                            <td><p class="bebasFont counters">$20</p></td>
                           </tr>
                           <tr>
                             <td><p id="ten-dollars-output" class="sarpanchFont counters">0</p></td>
                             <td><img class="z-depth-2 dollarImg" src="./images/ten.png"></td>
-                            <td><p class="sarpanchFont counters">$10</p></td>
+                            <td><p class="bebasFont counters">$10</p></td>
                           </tr>
                           <tr>
                             <td><p id="five-dollars-output" class="sarpanchFont counters">0</p></td>
                             <td><img class="z-depth-2 dollarImg" src="./images/five.png"></td>
-                            <td><p class="sarpanchFont counters">$5</p></td>
+                            <td><p class="bebasFont counters">$5</p></td>
                           </tr>
                           <tr>
                             <td><p id="two-dollars-output" class="sarpanchFont counters">0</p></td>
                             <td><img class="z-depth-2 dollarImg" src="./images/two.png"></td>
-                            <td><p class="sarpanchFont counters">$2</p></td>
+                            <td><p class="bebasFont counters">$2</p></td>
                           </tr>
                           <tr>
                             <td><p id="dollars-output" class="sarpanchFont counters">0</p></td>
                             <td><img class="z-depth-2 dollarImg" src="./images/one.png"></td>
-                            <td><p class="sarpanchFont counters">$1</p></td>
+                            <td><p class="bebasFont counters">$1</p></td>
                           </tr>
                         </tbody>
                     </table>
@@ -96,37 +96,37 @@
               </div>
           </div>
         </div>
-        <div class="col s6">
+        <div class="col s5">
           <div class="row">
             <div class="col s12">
                 <div class="row">
                     <table class="centered">
                         <thead>
                           <tr>
-                              <th>Count</th>
-                              <th colspan="2">Coin</th>
+                              <th class="counterHeaders bebasFont">Count</th>
+                              <th class="counterHeaders bebasFont" colspan="2">Coin</th>
                           </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><p id="quarters-output" class="sarpanchFont counters">0</p></td>
                                 <td><img class="coinImg" src="./images/quarter.png"></td>
-                                <td><p class="sarpanchFont counters">25&cent;</p></td>
+                                <td><p class="bebasFont counters">25&cent;</p></td>
                             </tr>
                             <tr>
                                 <td><p id="dimes-output" class="sarpanchFont counters">0</p></td>
                                 <td><img class="coinImg" src="./images/dime.png"></td>
-                                <td><p class="sarpanchFont counters">10&cent;</p></td>
+                                <td><p class="bebasFont counters">10&cent;</p></td>
                             </tr>
                             <tr>
                                 <td><p id="nickels-output" class="sarpanchFont counters">0</p></td>
                                 <td><img class="coinImg" src="./images/nickel.png"></td>
-                                <td><p class="sarpanchFont counters">5&cent;</p></td>
+                                <td><p class="bebasFont counters">5&cent;</p></td>
                             </tr>
                             <tr>
                                 <td><p id="pennies-output" class="sarpanchFont counters">0</p></td>
                                 <td><img class="coinImg" src="./images/penny.png"></td>
-                                <td><p class="sarpanchFont counters">1&cent;</p></td>
+                                <td><p class="bebasFont counters">1&cent;</p></td>
                             </tr>
                         </tbody>
                     </table>
