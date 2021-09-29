@@ -33,6 +33,6 @@ the Iceland, Sarpanch and Bebas Neue fonts used in the app.
 
 ## Live App
 
-This App is now live and can be visited at: https://alexkmartinez77.github.io/web-102-change-calculator
+This App is now live and can be visited at: https://alexkmartinez77.github.io/web102-change-calculator
 
 
