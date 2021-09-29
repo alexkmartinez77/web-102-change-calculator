@@ -17,14 +17,14 @@
         font-size: 2em !important;
     }
     .dollarImg {
-        vertical-align: middle;
-        width: 100px;
-        height: 42.5px;
+        vertical-align: middle !important;
+        width: 100px !important;
+        height: 42.5px !important;
     }
     .coinImg{
-        vertical-align: middle;
-        height: 42.5px; 
-        width: 42.5px;
+        vertical-align: middle !important;
+        height: 42.5px !important; 
+        width: 42.5px !important;
     }
     .dollarSignMargin{
         margin-bottom: 26px !important;
@@ -134,3 +134,4 @@ input:-webkit-autofill:active{
 
 input:-webkit-autofill{
     -webkit-text-fill-color: black !important;
+}
