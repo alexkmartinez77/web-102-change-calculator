@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Bebas+Neue&family=Sarpanch:wght@800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -26,31 +25,34 @@
       </div>
       <!-- Item Input Row -->
       <div class="row rowModifier1">
-        <form class="col s12"> 
+        <form class="col s12" onsubmit="submitFunction(); return false;"> 
           <div class="row rowModifier1 valign-wrapper">
             <div class="col s1 right-align dollarSignPadding">
               <p class="dollarSignMargin bebasFont">$</p>
             </div>
             <div class="input-field col s5">
-              <input id="amount-due" type="text" class="validate bebasFont">
+              <input id="amount-due" type="number" required step=".01" min=".00" class="validate bebasFont">
               <label for="amount-due" class="bebasFont">Sale Amount</label>
+              <span class="helper-text" id="helperSaleAmount"></span>
+
             </div>
             <div class="col s1 right-align dollarSignPadding">
               <p class="dollarSignMargin bebasFont">$</p>
             </div>
             <div class="input-field col s5">
-              <input id="amount-received" type="text" class="validate bebasFont">
+              <input id="amount-received" type="number" required step=".01" min=".00" class="validate bebasFont">
               <label for="amount-received" class="bebasFont">Amount Tendered</label>
+              <span class="helper-text" id="helperAmountTendered"></span>
             </div>
           </div>
+          <div class="row">
+            <button class="btn waves-effect waves-light black" id="calculate-change" type="submit" name="action">Caculate
+              <i class="material-icons right">send</i>
+            </button>
+          </div>    
         </form>
       </div>
-      <!--Button-->
-      <div class="class row">
-        <button onclick="handleClickEvent()" class="btn waves-effect waves-light black" id="calculate-change" type="submit" name="action">Caculate
-          <i class="material-icons right">send</i>
-        </button>
-      </div>
+
       <!--Results Row-->
       <div class="row">
         <div class="col s7">
@@ -61,7 +63,7 @@
                         <thead>
                           <tr>
                               <th class="counterHeaders bebasFont">Count</th>
-                              <th  class="counterHeaders bebasFont" colspan="2">Denomination</th>
+                              <th class="counterHeaders bebasFont" colspan="2">Denomination</th>
                           </tr>
                         </thead>
                         <tbody>

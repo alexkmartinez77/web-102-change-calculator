@@ -49,11 +49,18 @@ function calculateChange(tendered, cost){
     document.getElementById('pennies-output').innerHTML = pennyChange;
 }
 
-// handleClickEvent function
-function handleClickEvent(e){
-    var cost = document.getElementById('amount-due').value;
-    var tendered = document.getElementById('amount-received').value;
+// Submit function
+function submitFunction(){
+    var cost = parseFloat(document.getElementById('amount-due').value);
+    var tendered = parseFloat(document.getElementById('amount-received').value);
 
-    calculateChange(tendered, cost);
-}
+    if(cost > tendered){
+        var deficit = (cost - tendered).toFixed(2);
+        document.getElementById('helperAmountTendered').innerHTML = "Your are $" + deficit + " short."
+    } else if(cost <= tendered){
+        calculateChange(tendered, cost);
+        document.getElementById('helperAmountTendered').innerHTML = ""
+    }
+
+    }
 
