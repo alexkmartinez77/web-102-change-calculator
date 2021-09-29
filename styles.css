@@ -8,17 +8,49 @@
         width: 100% !important;
         }
     .counters{
-        font-size: 1.25em; 
+        font-size: 1.25em !important; 
         }
     .counterHeaders{
-        font-size: 1.5em;
+        font-size: 1.5em !important;
+    }
+    .inputText{
+        font-size: 2em !important;
+    }
+    .dollarImg {
+        vertical-align: middle;
+        width: 100px;
+        height: 42.5px;
+    }
+    .coinImg{
+        vertical-align: middle;
+        height: 42.5px; 
+        width: 42.5px;
+    }
+    .dollarSignMargin{
+        margin-bottom: 26px !important;
+        margin-top: 0px !important;
+        border-bottom: 1px !important;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 6em !important;
-    }    
+    }   
+    .counterHeaders{
+        font-size: 1.75em !important;
+    }
+    .counters{
+        font-size: 1.5em !important; 
+        } 
+    .inputText{
+        font-size: 2em !important;
+    }
+    .dollarSignMargin{
+        margin-bottom: 26px !important;
+        margin-top: 0px !important;
+        border-bottom: 1px !important;
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -70,20 +102,12 @@
     height: 64px; 
     width: 64px;
 }
-
 .dollarSignPadding{
     padding-right: 0 !important;
 }
 
-.dollarSignMargin{
-    margin-bottom: 8px !important;
-    margin-top: 0px !important;
-    border-bottom: 1px !important;
-}
-
 th, td{
     padding: 5px 5px 5px 5px !important;
-    /*border: blue dashed 1px !important;*/
 
 }
 
@@ -93,7 +117,6 @@ th, td{
 
 table{
     margin: 0 auto !important;
-    /*border: red solid 1px !important;*/
     width: 1px !important;
 
 }
