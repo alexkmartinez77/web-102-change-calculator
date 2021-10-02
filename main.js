@@ -56,7 +56,7 @@ function submitFunction(){
 
     if(cost > tendered){
         var deficit = (cost - tendered).toFixed(2);
-        document.getElementById('helperAmountTendered').innerHTML = "Your are $" + deficit + " short."
+        document.getElementById('helperAmountTendered').innerHTML = `Your are $${deficit} short.`
     } else if(cost <= tendered){
         calculateChange(tendered, cost);
         document.getElementById('helperAmountTendered').innerHTML = ""
