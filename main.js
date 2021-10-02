@@ -1,5 +1,5 @@
 // Calculate Change function
-function calculateChange(tendered, cost){
+let calculateChange = (tendered, cost) => {
 
     var change = tendered - cost;
 
@@ -50,7 +50,7 @@ function calculateChange(tendered, cost){
 }
 
 // Submit function
-function submitFunction(){
+let submitFunction = () => {
     var cost = parseFloat(document.getElementById('amount-due').value);
     var tendered = parseFloat(document.getElementById('amount-received').value);
 
