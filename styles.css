@@ -1,137 +1,135 @@
 /*
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 4em !important;
-    }
-    .container{
-        width: 100% !important;
-        }
-    .counters{
-        font-size: 1.25em !important; 
-        }
-    .counterHeaders{
-        font-size: 1.5em !important;
-    }
-    .inputText{
-        font-size: 2em !important;
-    }
-    .dollarImg {
-        vertical-align: middle !important;
-        width: 100px !important;
-        height: 42.5px !important;
-    }
-    .coinImg{
-        vertical-align: middle !important;
-        height: 42.5px !important; 
-        width: 42.5px !important;
-    }
-    .dollarSignMargin{
-        margin-bottom: 26px !important;
-        margin-top: 0px !important;
-        border-bottom: 1px !important;
-    }
+  h1 {
+    font-size: 4em !important;
+  }
+  .container {
+    width: 100% !important;
+  }
+  .counters {
+    font-size: 1.25em !important;
+  }
+  .counterHeaders {
+    font-size: 1.5em !important;
+  }
+  .inputText {
+    font-size: 2em !important;
+  }
+  .dollarImg {
+    vertical-align: middle !important;
+    width: 100px !important;
+    height: 42.5px !important;
+  }
+  .coinImg {
+    vertical-align: middle !important;
+    height: 42.5px !important;
+    width: 42.5px !important;
+  }
+  .dollarSignMargin {
+    margin-bottom: 26px !important;
+    margin-top: 0px !important;
+    border-bottom: 1px !important;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    h1 {
-        font-size: 6em !important;
-    }   
-    .counterHeaders{
-        font-size: 1.75em !important;
-    }
-    .counters{
-        font-size: 1.5em !important; 
-        } 
-    .inputText{
-        font-size: 2em !important;
-    }
-    .dollarSignMargin{
-        margin-bottom: 26px !important;
-        margin-top: 0px !important;
-        border-bottom: 1px !important;
-    }
+  h1 {
+    font-size: 6em !important;
+  }
+  .counterHeaders {
+    font-size: 1.75em !important;
+  }
+  .counters {
+    font-size: 1.5em !important;
+  }
+  .inputText {
+    font-size: 2em !important;
+  }
+  .dollarSignMargin {
+    margin-bottom: 26px !important;
+    margin-top: 0px !important;
+    border-bottom: 1px !important;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    h1 {
-        font-size: 6em !important;
-    }
-
+  h1 {
+    font-size: 6em !important;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    h1 {
-        font-size: 6em !important;
-    }
+  h1 {
+    font-size: 6em !important;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    h1 {
-        font-size: 5em !important;
-    }
+  h1 {
+    font-size: 5em !important;
+  }
 }
 
-.sarpanchFont{
-    font-family: 'Sarpanch', sans-serif;
+.sarpanchFont {
+  font-family: "Sarpanch", sans-serif;
 }
 
-.bebasFont{
-    font-family: 'Bebas Neue', cursive;
+.bebasFont {
+  font-family: "Bebas Neue", cursive;
 }
 
-.icelandFont{
-    font-family: 'Iceland', cursive;
+.icelandFont {
+  font-family: "Iceland", cursive;
 }
 
-.rowModifier1{
-    margin-bottom: 0px !important;
+.rowModifier1 {
+  margin-bottom: 0px !important;
 }
 
 .container {
-    max-width: 600px !important;
-  }
+  max-width: 600px !important;
+}
 
 .dollarImg {
-    vertical-align: middle;
-    width: 150px;
-    height: 64px;
+  vertical-align: middle;
+  width: 150px;
+  height: 64px;
 }
-.coinImg{
-    vertical-align: middle;
-    height: 64px; 
-    width: 64px;
+.coinImg {
+  vertical-align: middle;
+  height: 64px;
+  width: 64px;
 }
-.dollarSignPadding{
-    padding-right: 0 !important;
-}
-
-th, td{
-    padding: 5px 5px 5px 5px !important;
-
+.dollarSignPadding {
+  padding-right: 0 !important;
 }
 
-.noMargin{
-    margin: 0px !important;
+th,
+td {
+  padding: 5px 5px 5px 5px !important;
 }
 
-table{
-    margin: 0 auto !important;
-    width: 1px !important;
-
+.noMargin {
+  margin: 0px !important;
 }
 
-.headerMargin{
-    margin: 10px 0px 10px 0px !important;
+table {
+  margin: 0 auto !important;
+  width: 1px !important;
+}
+
+.headerMargin {
+  margin: 10px 0px 10px 0px !important;
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important;
 }
 
-input:-webkit-autofill{
-    -webkit-text-fill-color: black !important;
+input:-webkit-autofill {
+  -webkit-text-fill-color: black !important;
 }
