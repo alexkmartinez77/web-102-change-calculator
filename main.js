@@ -15,7 +15,7 @@ let calculateChange = (tendered, cost) => {
   var remainingChange = tendered - cost;
 
   for (denomination of changeObject) {
-    var { currency, value } = denomination;
+    let { currency, value } = denomination;
     document.getElementById(`${currency}-output`).innerHTML = Math.floor(
       remainingChange / value
     );
@@ -25,11 +25,11 @@ let calculateChange = (tendered, cost) => {
 
 // Submit function
 let submitFunction = () => {
-  var cost = parseFloat(document.getElementById("amount-due").value);
-  var tendered = parseFloat(document.getElementById("amount-received").value);
+  const cost = parseFloat(document.getElementById("amount-due").value);
+  const tendered = parseFloat(document.getElementById("amount-received").value);
 
   if (cost > tendered) {
-    var deficit = (cost - tendered).toFixed(2);
+    const deficit = (cost - tendered).toFixed(2);
     document.getElementById(
       "helperAmountTendered"
     ).innerHTML = `Your are $${deficit} short.`;
