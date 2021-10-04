@@ -19,6 +19,9 @@ let calculateChange = (tendered, cost) => {
     document.getElementById(`${currency}-output`).innerHTML = Math.floor(
       remainingChange / value
     );
+    if(Math.floor(remainingChange / value) > 0){
+    document.getElementById(`${currency}-output`).style.color = 'black';
+  };
     remainingChange = (remainingChange % value).toFixed(2);
   }
 };
@@ -36,6 +39,6 @@ let submitFunction = () => {
   } else if (cost <= tendered) {
     calculateChange(tendered, cost);
     document.getElementById("helperAmountTendered").innerHTML = "";
-    document.getElementById("totalChange").innerHTML = `Your change comes to ${tendered-cost}.`
+    document.getElementById("totalChange").innerHTML = `Total Change: $${tendered-cost}`
   }
 };

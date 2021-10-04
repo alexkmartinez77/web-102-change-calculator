@@ -9,6 +9,7 @@
   }
   .counters {
     font-size: 1.25em !important;
+    color: grey;
   }
   .counterHeaders {
     font-size: 1.5em !important;
@@ -42,6 +43,7 @@
   }
   .counters {
     font-size: 1.5em !important;
+    color: grey;
   }
   .inputText {
     font-size: 2em !important;
