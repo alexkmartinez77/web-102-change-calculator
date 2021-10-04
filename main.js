@@ -36,5 +36,6 @@ let submitFunction = () => {
   } else if (cost <= tendered) {
     calculateChange(tendered, cost);
     document.getElementById("helperAmountTendered").innerHTML = "";
+    document.getElementById("totalChange").innerHTML = `Your change comes to ${tendered-cost}.`
   }
 };

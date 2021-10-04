@@ -123,6 +123,10 @@ table {
   margin: 10px 0px 10px 0px !important;
 }
 
+#totalChange {
+  height: 14px;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
