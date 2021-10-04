@@ -16,12 +16,15 @@ let calculateChange = (tendered, cost) => {
 
   for (denomination of changeObject) {
     let { currency, value } = denomination;
-    document.getElementById(`${currency}-output`).style.color = 'grey';
+    document.getElementById(`${currency}-output`).style.color = '#cccccc';
+    document.getElementById(`${currency}-label`).style.color = '#cccccc';
     document.getElementById(`${currency}-output`).innerHTML = Math.floor(
       remainingChange / value
     );
     if(Math.floor(remainingChange / value) > 0){
     document.getElementById(`${currency}-output`).style.color = 'black';
+    document.getElementById(`${currency}-label`).style.color = 'black';
+
   };
     remainingChange = (remainingChange % value).toFixed(2);
   }
