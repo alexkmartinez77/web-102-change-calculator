@@ -16,6 +16,7 @@ let calculateChange = (tendered, cost) => {
 
   for (denomination of changeObject) {
     let { currency, value } = denomination;
+    document.getElementById(`${currency}-output`).style.color = 'grey';
     document.getElementById(`${currency}-output`).innerHTML = Math.floor(
       remainingChange / value
     );
@@ -39,6 +40,6 @@ let submitFunction = () => {
   } else if (cost <= tendered) {
     calculateChange(tendered, cost);
     document.getElementById("helperAmountTendered").innerHTML = "";
-    document.getElementById("totalChange").innerHTML = `Total Change: $${tendered-cost}`
+    document.getElementById("totalChange").innerHTML = `Total Change: $${(tendered-cost).toFixed(2)}`
   }
 };
