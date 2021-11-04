@@ -1,4 +1,4 @@
-![Change Calculator](https://alexkmartinez77.github.io/web102-change-calculator/images/changeApp.png)
+![Change Calculator](https://alexkmartinez77.github.io/web102-change-calculator/public/images/changeApp.png)
 # Change Calculator App
 
 The Change Calculator calculates how much change you are due given a sale amount and
