@@ -5,7 +5,7 @@ const expect = require('chai').expect;
 const axios = require('axios');
 
 const app = express();
-app.use(express.static(path.join(__dirname, '../')));
+app.use(express.static(path.join(__dirname, '../public')));
 app.listen(8888);
 
 const url = 'http://localhost:8888/index.html';
@@ -49,7 +49,11 @@ describe('Change Calculator', function () {
     );
 
     [
-      'dollars-output',
+      'twenties-output',
+      'tens-output',
+      'fives-output',
+      'twos-output',
+      'ones-output',
       'quarters-output',
       'dimes-output',
       'nickels-output',
@@ -76,9 +80,13 @@ describe('Change Calculator', function () {
         .type('#amount-received', '20')
         .type('#amount-due', '10.21')
         .click('#calculate-change')
-        .wait('#dollars-output')
+        .wait('#twenties-output')
         .evaluate(() => ({
-          dollars: document.querySelector('#dollars-output').innerText,
+          twenties: document.querySelector('#twenties-output').innerText,
+          tens: document.querySelector('#tens-output').innerText,
+          fives: document.querySelector('#fives-output').innerText,
+          twos: document.querySelector('#twos-output').innerText,
+          ones: document.querySelector('#ones-output').innerText,
           quarters: document.querySelector('#quarters-output').innerText,
           dimes: document.querySelector('#dimes-output').innerText,
           nickels: document.querySelector('#nickels-output').innerText,
@@ -86,7 +94,11 @@ describe('Change Calculator', function () {
         }))
         .end()
         .then(change => {
-          expect(change.dollars).to.equal('9', 'Expected dollars didn\'t match');
+          expect(change.twenties).to.equal('0', 'Expected twenties didn\'t match');
+          expect(change.tens).to.equal('0', 'Expected tens didn\'t match');
+          expect(change.fives).to.equal('1', 'Expected fives didn\'t match');
+          expect(change.twos).to.equal('2', 'Expected twos didn\'t match');
+          expect(change.ones).to.equal('0', 'Expected ones didn\'t match');
           expect(change.quarters).to.equal('3', 'Expected quarters didn\'t match');
           expect(change.dimes).to.equal('0', 'Expected dimes didn\'t match');
           expect(change.nickels).to.equal('0', 'Expected nickels didn\'t match');
@@ -100,9 +112,13 @@ describe('Change Calculator', function () {
         .type('#amount-received', '20')
         .type('#amount-due', '13.34')
         .click('#calculate-change')
-        .wait('#dollars-output')
+        .wait('#twenties-output')
         .evaluate(() => ({
-          dollars: document.querySelector('#dollars-output').innerText,
+          twenties: document.querySelector('#twenties-output').innerText,
+          tens: document.querySelector('#tens-output').innerText,
+          fives: document.querySelector('#fives-output').innerText,
+          twos: document.querySelector('#twos-output').innerText,
+          ones: document.querySelector('#ones-output').innerText,
           quarters: document.querySelector('#quarters-output').innerText,
           dimes: document.querySelector('#dimes-output').innerText,
           nickels: document.querySelector('#nickels-output').innerText,
@@ -110,7 +126,11 @@ describe('Change Calculator', function () {
         }))
         .end()
         .then(change => {
-          expect(change.dollars).to.equal('6', 'Expected dollars didn\'t match');
+          expect(change.twenties).to.equal('0', 'Expected twenties didn\'t match');
+          expect(change.tens).to.equal('0', 'Expected tens didn\'t match');
+          expect(change.fives).to.equal('1', 'Expected fives didn\'t match');
+          expect(change.twos).to.equal('0', 'Expected twos didn\'t match');
+          expect(change.ones).to.equal('1', 'Expected ones didn\'t match');
           expect(change.quarters).to.equal('2', 'Expected quarters didn\'t match');
           expect(change.dimes).to.equal('1', 'Expected dimes didn\'t match');
           expect(change.nickels).to.equal('1', 'Expected nickels didn\'t match');
